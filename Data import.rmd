@@ -1,0 +1,22 @@
+---
+Data Science training
+Data import
+---
+
+```{r}
+#install.packages("openxlsx")
+library(openxlsx)
+```
+Text
+```{r}
+X = read.csv(file.choose(),header = TRUE, sep = ",")
+X
+X = read.csv("Credit.csv",header = TRUE, sep = ",")
+X
+```
+Excel
+```{r}
+data = read.xlsx("Credit.xlsx",sheet = 1)
+data
+```
+
